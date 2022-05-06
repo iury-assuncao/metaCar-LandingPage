@@ -17,3 +17,38 @@
 html{
     font-size: 62.5%;
 }
+
+header{
+    background: #aa1bd6;
+    display: flex;
+    height: 9rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    backdrop-filter: blur(15px) saturate(180%);
+    
+}
+
+header .logo{
+    width: 14rem;
+    
+}
+
+header .logo img{
+    max-width: 100%;
+}
+
+
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:9.3rem;
+}
+
+header ul a{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-family: 'Euclid Circular A';
+}
+
