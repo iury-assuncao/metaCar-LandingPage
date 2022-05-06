@@ -1,0 +1,19 @@
+
+/*Global style*/
+:root{
+    --primary-color: #e50914;
+    --dark-color: #141414;
+    --light-color: #f4f4f4;
+}
+
+*{
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+html{
+    font-size: 62.5%;
+}
