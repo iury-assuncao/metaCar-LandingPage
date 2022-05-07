@@ -1,9 +1,8 @@
 
 /*Global style*/
 :root{
-    --primary-color: #e50914;
-    --dark-color: #141414;
-    --light-color: #f4f4f4;
+    --dark-color: #14181D;;
+    --linear-color:  linear-gradient(265.19deg, #7000FF -20.04%, #FF00C7 126.34%);
 }
 
 *{
@@ -16,39 +15,100 @@
 
 html{
     font-size: 62.5%;
+    font-family: 'Euclid Circular A';
+    color: #fff;
 }
 
-header{
-    background: #aa1bd6;
+.header{
     display: flex;
     height: 9rem;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 0 5rem;
-    backdrop-filter: blur(15px) saturate(180%);
+    backdrop-filter: blur(6px);
+    position: fixed;
+    z-index: 100;
+    
     
 }
 
-header .logo{
+.header .logo{
     width: 14rem;
     
 }
 
-header .logo img{
+.header .logo img{
     max-width: 100%;
 }
 
 
-header ul{
+.header ul{
     display: flex;
     align-items: center;
     justify-content: center;
     gap:9.3rem;
 }
 
-header ul a{
+.header ul a{
     color: rgb(255, 255, 255);
     font-size: 2rem;
-    font-family: 'Euclid Circular A';
+    
 }
+
+.home{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, #4B276D -1.93%, rgba(109, 80, 143, 0) 100%), url("../imgs/car.gif") no-repeat center center/cover;
+    
+}
+
+.home::after{
+    content: '';
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.17);
+    width: 100%;
+    height: 100%;
+    
+}
+
+.home-content{
+    padding-top: 14rem;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.home-content header{
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.home-content header h1{
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 63px;
+}
+
+.home header h1 span{
+    background: var(--linear-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn{
+    padding: 1.3rem 3.7rem;
+    background: var(--linear-color);
+    border-radius: 1.3rem;
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: #fff;
+}
+
 
