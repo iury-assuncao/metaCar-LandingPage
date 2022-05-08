@@ -1,8 +1,9 @@
 
 /*Global style*/
 :root{
-    --dark-color: #14181D;;
-    --linear-color:  linear-gradient(265.19deg, #7000FF -20.04%, #FF00C7 126.34%);
+    --dark-color: #14181da8;
+    --linear-color:  linear-gradient(265.19deg, #7000FF -20.04%, #FF00C7 126.34%);;
+    --linear-color2:  linear-gradient(265.19deg, #FF00C7 -20%, #7000FF 100%);
 }
 
 *{
@@ -11,6 +12,7 @@
     list-style: none;
     margin: 0;
     padding:0;
+    
 }
 
 html{
@@ -29,8 +31,7 @@ html{
     backdrop-filter: blur(6px);
     position: fixed;
     z-index: 100;
-    
-    
+
 }
 
 .header .logo{
@@ -43,20 +44,40 @@ html{
 }
 
 
-.header ul{
+.nav-list ul{
     display: flex;
     align-items: center;
     justify-content: center;
     gap:9.3rem;
 }
 
-.header ul a{
+.nav-list ul a{
     color: rgb(255, 255, 255);
     font-size: 2rem;
     
 }
 
+.mobile-menu{
+    cursor: pointer;
+    display:none;
+}
+
+/*menu hamburguer*/
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+    
+}
+
+
+/*section1*/
+
 .home{
+    padding-top: 14rem;
     height: 100vh;
     width: 100%;
     background: linear-gradient(180deg, #4B276D -1.93%, rgba(109, 80, 143, 0) 100%), url("../imgs/car.gif") no-repeat center center/cover;
@@ -64,38 +85,40 @@ html{
 }
 
 .home::after{
+    position: absolute;
     content: '';
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.17);
     width: 100%;
     height: 100%;
-    
+
 }
 
 .home-content{
-    padding-top: 14rem;
     display: flex;
     justify-content: center;
    
+   
 }
 
-.home-content header{
+.home-content aside{
     width: 45rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 4rem;
+    z-index: 2;
 }
 
-.home-content header h1{
+aside h1{
     font-weight: 600;
     font-size: 5rem;
     line-height: 63px;
 }
 
-.home header h1 span{
+aside h1 span{
     background: var(--linear-color);
     background-clip: text;
     -webkit-background-clip: text;
@@ -109,6 +132,107 @@ html{
     font-weight: 400;
     font-size: 2.4rem;
     color: #fff;
+}
+
+.btn:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.img{
+    width: 40%;
+    z-index: 2;
+}
+
+.img img{
+    width: 100%;
+}
+
+@media (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .header{
+        background: #14181da8;
+    }
+    .nav-list{
+        position: absolute;
+        width: 50%;
+        height: calc(100vh - 9rem);
+        right: 0;
+        top:9rem;
+        display: flex;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        background: #14181d;
+        
+    }
+
+    .nav-list.active{
+        transform: translateX(0);
+    }
+
+    .nav-list ul{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .mobile-menu.active .line1{
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    .mobile-menu.active .line2{
+        opacity: 0;
+        
+    }
+    .mobile-menu.active .line3{
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+    /*section home*/
+
+    .home{
+        height: 100vh;
+    }
+
+    .home-content{
+        flex-direction: column;
+        align-items: center;
+        gap:5rem;
+    }
+
+    .home-content aside{
+        width: 80%;
+        align-items: center;
+        
+    }
+    aside h1{
+        text-align: center;
+    }
+
+    .img{
+        width: 60%;
+        
+    }
+}
+
+@media (max-width:480px){
+    .home{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    .img{
+        display: none;
+    }
+
 }
 
 
