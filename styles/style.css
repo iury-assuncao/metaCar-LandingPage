@@ -179,13 +179,10 @@ aside h1 span{
     padding: 3rem 2rem;
     background: #242424;
     border-radius: 30px;
-    border-image-slice: 1;
     position: relative;
-    border-radius: 30px; 
-
 }
 
-.card::before{
+.cards-benefits .card::before{
     content: '';
     position: absolute;
     inset: 0;
@@ -334,14 +331,62 @@ aside h1 span{
 
 .ligament{
     width: 93.4%;
-    height: 50vh;
+    height: 70vh;
     border: 1px solid #7000FF;
     border-radius: 23px;
     margin: auto;
-    margin-top: -11rem;
+    margin-top: -15rem;
     z-index: 4;
 }
 
+.ligament{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ligament h1{
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 44px;
+    letter-spacing: 0.045em;
+}
+
+.installation-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6.6rem;
+    z-index: 5;
+    margin-top: -15rem;
+}
+
+.installation-cards h1{
+    display: block;
+}
+
+.installation-cards .card{
+    width: 25rem;
+    height: 32rem;
+    padding: 2rem;
+    background: #242424;
+    border-radius: 30px;
+    border: 1px solid #7000FF;
+    
+    
+}
+
+.installation-cards .card h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.installation-cards .card p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 19px;
+    margin-top: 4.7rem;
+}
 
 
 @media (max-width:768px){
