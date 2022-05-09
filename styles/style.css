@@ -280,6 +280,70 @@ aside h1 span{
     background: var(--linear-color);
 }
 
+/*section installation*/
+
+.installation{
+    width: 100%;
+    margin-top: 15rem;
+}
+
+.installation-head{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+}
+
+.installation-head h1{
+    font-size: 4rem;
+    margin-left: 4.5%;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: 0.045em;
+    
+}
+
+.installation .line{
+    background: var(--linear-color2);
+}
+
+.installation-text{
+    width: 80%;
+    height: 40rem;
+    background: url("../imgs/bg-installation.svg") no-repeat center center/cover ; 
+    border-radius: 23px;
+    margin: auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:4rem;
+    padding: 8rem;
+    position: relative;
+    z-index: 5;
+}
+
+
+.installation-text p{
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 30px;
+    letter-spacing: 0.045em;
+    
+}
+
+.ligament{
+    width: 93.4%;
+    height: 50vh;
+    border: 1px solid #7000FF;
+    border-radius: 23px;
+    margin: auto;
+    margin-top: -11rem;
+    z-index: 4;
+}
+
+
+
 @media (max-width:768px){
     body{
         
@@ -357,7 +421,7 @@ aside h1 span{
         display: none;
     }
 
-    .about-metaverse .text{
+    .text{
         width: 100%;
         
     }
@@ -395,6 +459,26 @@ aside h1 span{
 
     .about-metacar img{
         display: none;
+    }
+
+    /*section installation*/
+
+    .installation{
+        margin-top: 5rem;
+    }
+
+    .installation-head h1{  
+        font-size: 3rem;
+        margin: 0 10%;
+    }
+
+    .installation-text{
+        padding: 2rem;
+    }
+
+    .installation-text p{
+        font-size: 1.4rem;
+       
     }
 
 }
