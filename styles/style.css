@@ -167,7 +167,7 @@ aside h1 span{
     justify-content: center;
     align-items: center;
     gap:6.6rem;
-    margin:5rem 0;
+    margin-top:5rem;
 
     
 }
@@ -213,8 +213,48 @@ aside h1 span{
 
 .about-metaverse{
     display: flex;
+    width: 100%;
+    margin-top: 15rem;
 }
 
+.about-metaverse img{
+    width: 50%;
+    margin-left: 0;
+}
+
+.about-metaverse .text{
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    justify-content: center;
+
+}
+
+.about-metaverse .line{
+    width: 100%;
+    height: 7px;
+    background: var(--linear-color2);
+}
+
+.text h1{
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 51px;
+    letter-spacing: 0.045em;
+    width: 57%;
+    margin-left: 9%;
+    
+
+}
+
+.text p{
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 30px;
+    letter-spacing: 0.045em;
+    width: 68.3%;
+    margin-left: 9%;
+}
 
 @media (max-width:768px){
     body{
@@ -287,6 +327,27 @@ aside h1 span{
     .img{
         width: 60%;
         
+    }
+
+    .about-metaverse img{
+        display: none;
+    }
+
+    .about-metaverse .text{
+        width: 100%;
+        
+    }
+
+    .text h1{
+       
+       font-size: 3rem;
+       margin: 0 10%;
+    }
+
+    .text p{
+        font-size: 2rem;
+        margin: 0 10%;
+               
     }
 
 }
