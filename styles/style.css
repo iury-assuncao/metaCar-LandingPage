@@ -19,6 +19,7 @@ html{
     font-size: 62.5%;
     font-family: 'Euclid Circular A';
     color: #fff;
+    scroll-behavior:smooth;
 }
 
 body{
@@ -168,7 +169,7 @@ aside h1 span{
     align-items: center;
     gap:6.6rem;
     margin-top:5rem;
-
+    margin-bottom: 15rem;
     
 }
 
@@ -214,7 +215,6 @@ aside h1 span{
 .about-metaverse{
     display: flex;
     width: 100%;
-    margin-top: 15rem;
 }
 
 .about-metaverse img{
@@ -222,7 +222,7 @@ aside h1 span{
     margin-left: 0;
 }
 
-.about-metaverse .text{
+.text{
     display: flex;
     flex-direction: column;
     gap:3rem;
@@ -230,9 +230,12 @@ aside h1 span{
 
 }
 
-.about-metaverse .line{
+.line{
     width: 100%;
     height: 7px;
+}
+
+.about-metaverse .line{
     background: var(--linear-color2);
 }
 
@@ -243,7 +246,6 @@ aside h1 span{
     letter-spacing: 0.045em;
     width: 57%;
     margin-left: 9%;
-    
 
 }
 
@@ -254,6 +256,28 @@ aside h1 span{
     letter-spacing: 0.045em;
     width: 68.3%;
     margin-left: 9%;
+}
+
+/*section imagem mobile*/
+
+.img-mobile{
+    display: none;
+}
+
+/*section about metacar*/
+
+.about-metacar{
+    display: flex;
+    width: 100%;
+    margin-top: 15rem;
+}
+
+.about-metacar img{
+    width: 50%;
+}
+
+.about-metacar .line{
+    background: var(--linear-color);
 }
 
 @media (max-width:768px){
@@ -348,6 +372,29 @@ aside h1 span{
         font-size: 2rem;
         margin: 0 10%;
                
+    }
+
+    /*section mobile image*/
+    .img-mobile{
+        padding: 5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+
+    }   
+
+    .img-mobile img{
+        width: 100%;
+
+    }
+
+    .about-metacar{
+        margin-top: 0;
+    }
+
+    .about-metacar img{
+        display: none;
     }
 
 }
