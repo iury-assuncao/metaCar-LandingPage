@@ -468,6 +468,16 @@ aside h1 span{
     cursor: pointer;
 }
 
+footer{
+    width: 100%;
+    background: #000;
+    text-align: center;
+    padding: 3rem 0;
+    font-weight: 400;
+    font-size: 1.6rem;
+
+}
+
 @media (max-width:768px){
     body{
         
@@ -476,13 +486,14 @@ aside h1 span{
 
     .header{
         background: #14181da8;
+        height: 7rem;
     }
     .nav-list{
         position: absolute;
         width: 50%;
-        height: calc(100vh - 9rem);
+        height: calc(100vh - 7rem);
         right: 0;
-        top:9rem;
+        top:7rem;
         display: flex;
         justify-content: center;
         transform: translateX(100%);
@@ -609,6 +620,11 @@ aside h1 span{
 
     .form-contact{
         width: 100%;
+    }
+
+    footer{
+        padding: 2rem;
+        font-size: 1.2rem;
     }
 
 }
