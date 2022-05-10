@@ -1,3 +1,4 @@
+
 /*Global style*/
 :root{
     --dark-color: #14181da8;
@@ -59,7 +60,11 @@ body{
 .nav-list ul a{
     color: rgb(255, 255, 255);
     font-size: 2rem;
-    
+}
+
+.nav-list ul a:hover{
+    transition: 0.3s;
+    opacity: 0.5;
 }
 
 .mobile-menu{
@@ -538,6 +543,10 @@ footer{
         gap:5rem;
     }
 
+    .img{
+        display: none;
+    }
+
     .home-content aside{
         width: 80%;
         align-items: center;
@@ -637,9 +646,7 @@ footer{
         padding-top: 0;
     }
 
-    .img{
-        display: none;
-    }
+   
 
 }
 
