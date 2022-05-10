@@ -1,7 +1,7 @@
-
 /*Global style*/
 :root{
     --dark-color: #14181da8;
+    --purple: #7000FF;
     --linear-color:  linear-gradient(265.19deg, #7000FF -20.04%, #FF00C7 126.34%);;
     --linear-color2:  linear-gradient(265.19deg, #FF00C7 -20%, #7000FF 100%);
 }
@@ -332,7 +332,7 @@ aside h1 span{
 .ligament{
     width: 93.4%;
     height: 70vh;
-    border: 1px solid #7000FF;
+    border: 1px solid var(--purple);
     border-radius: 23px;
     margin: auto;
     margin-top: -15rem;
@@ -345,7 +345,7 @@ aside h1 span{
     justify-content: center;
 }
 
-.ligament h1{
+.ligament h2{
     font-weight: 600;
     font-size: 3.5rem;
     line-height: 44px;
@@ -371,7 +371,7 @@ aside h1 span{
     padding: 2rem;
     background: #242424;
     border-radius: 30px;
-    border: 1px solid #7000FF;
+    border: 1px solid var(--purple);
     
     
 }
@@ -388,6 +388,85 @@ aside h1 span{
     margin-top: 4.7rem;
 }
 
+/*section contact us*/
+
+.contact{
+    margin-top: 15rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 62.4rem;
+    background: url('../imgs/bg-contact.svg') no-repeat center center/cover;
+}
+
+.form-contact{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:6rem;
+    justify-content: center;
+    padding: 4rem;
+    backdrop-filter: blur(16px);
+    background: rgba(0, 0, 0, 0.568);
+    align-items: center;
+
+      
+}
+
+.form-contact h2{
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 44px;
+    letter-spacing: 0.045em;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    align-items: center;
+    width: 100%;
+
+}
+
+#form input{
+    border: 1.5px solid #FFFFFF;
+    border-radius: 38px;
+    height: 6.6rem;
+    background: none;
+    padding: 1rem 2rem;
+    width: 100%;
+    color: #fff;
+    font-size: 1.8rem;
+
+}
+
+#form input::placeholder{
+    font-family: 'Euclid Circular A';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#form button{
+    background: var(--linear-color2);
+    border-radius: 13px;
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: #fff;
+    border: none;
+    padding: 1.3rem 3rem;
+
+}
+
+#form button:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+    cursor: pointer;
+}
 
 @media (max-width:768px){
     body{
@@ -524,6 +603,12 @@ aside h1 span{
     .installation-text p{
         font-size: 1.4rem;
        
+    }
+
+    /*section contact*/
+
+    .form-contact{
+        width: 100%;
     }
 
 }
